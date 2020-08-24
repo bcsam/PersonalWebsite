@@ -9,16 +9,14 @@ export default class WorkPageEntry extends Component {
         <h5>
           <b>{this.props.company}</b>
         </h5>
-        <p>
-          {positionDate}
-          <br></br>
-          <i>{this.props.location}</i>
-          <ul>
-            {this.props.description.map((point, ind) => (
-              <li key={ind}>{point}</li>
-            ))}
-          </ul>
-        </p>
+        {positionDate}
+        <br></br>
+        <i>{this.props.location}</i>
+        <ul>
+          {this.props.description.map((point, ind) => (
+            <li key={ind}>{point}</li>
+          ))}
+        </ul>
       </div>
     );
   }

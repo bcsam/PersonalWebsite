@@ -77,7 +77,7 @@ export default class Home extends Component {
             </h3>
           </div>
           <div className="overlay"></div>
-          <img src={homeBanner} className="homeImage" />
+          <img alt="Alt" src={homeBanner} className="homeImage" />
         </div>
 
         {/* About Me */}
@@ -120,7 +120,7 @@ export default class Home extends Component {
               </Button>
             </Col>
             <Col>
-              <img src={profileImage} className="profileImage" />
+              <img alt="Alt" src={profileImage} className="profileImage" />
             </Col>
           </Row>
 
@@ -408,6 +408,12 @@ export default class Home extends Component {
           location: "New York, New York",
           description: "Description Coming Soon",
         });
+        break;
+
+      default:
+        console.log(
+          "ERROR: Hit the default case of workExperience switch in Home.js"
+        );
         break;
     }
   }

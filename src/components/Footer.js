@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
-import styled from 'styled-components';
+import React from "react";
+import { Navbar } from "react-bootstrap";
+import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
@@ -9,7 +8,9 @@ const Styles = styled.div`
     box-shadow: 0 1px whitesmoke;
   }
 
-  a, .navbar-brand, .navbar-nav .nav-link {
+  a,
+  .navbar-brand,
+  .navbar-nav .nav-link {
     color: #ffffff;
 
     &:hover {
@@ -21,7 +22,7 @@ const Styles = styled.div`
 export const Footer = () => (
   <Styles>
     <Navbar sticky="bottom" expand="lg">
-    <Navbar.Brand href="/">Created by Brent Samuels</Navbar.Brand>
+      <Navbar.Brand href="/">Created by Brent Samuels</Navbar.Brand>
       {/* 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -44,5 +45,5 @@ export const Footer = () => (
         </Nav>
       </Navbar.Collapse> */}
     </Navbar>
-  </Styles >
-)
+  </Styles>
+);

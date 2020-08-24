@@ -7,14 +7,13 @@ export default class ResearchPageEntry extends Component {
         <h5>
           <b>{this.props.project}</b>
         </h5>
-        <p>
-          <i>{this.props.date}</i>
-          <ul>
-            {this.props.description.map((point, ind) => (
-              <li key={ind}>{point}</li>
-            ))}
-          </ul>
-        </p>
+
+        <i>{this.props.date}</i>
+        <ul>
+          {this.props.description.map((point, ind) => (
+            <li key={ind}>{point}</li>
+          ))}
+        </ul>
       </div>
     );
   }

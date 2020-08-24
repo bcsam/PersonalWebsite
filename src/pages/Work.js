@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import WorkPageEntry from "../components/WorkPageEntry.js";
-import profileImage from "../assets/propic.jpg";
 
 export const Work = () => (
   <Container
