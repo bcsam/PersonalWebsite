@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "05659c35e1ea69dfa98e",
+    "revision": "512a8855b82ecdc924e2",
     "url": "/PersonalWebsite/static/css/main.8c989506.chunk.css"
   },
   {
-    "revision": "05659c35e1ea69dfa98e",
-    "url": "/PersonalWebsite/static/js/main.8897a24d.chunk.js"
+    "revision": "512a8855b82ecdc924e2",
+    "url": "/PersonalWebsite/static/js/main.d0b11bd0.chunk.js"
   },
   {
     "revision": "2e985b43df9fb49ad811",
     "url": "/PersonalWebsite/static/js/runtime~main.53ae6336.js"
   },
   {
-    "revision": "f7ea4faf4120ca068781",
-    "url": "/PersonalWebsite/static/js/2.d4af5c31.chunk.js"
-  },
-  {
-    "revision": "81491570efd59b8776bb632a37d0097d",
-    "url": "/PersonalWebsite/static/media/homePage.81491570.jpg"
+    "revision": "b001511c214e9fc66057",
+    "url": "/PersonalWebsite/static/js/2.86f9a7ae.chunk.js"
   },
   {
     "revision": "7e31c89556d988f126dd739dfa02b7c0",
     "url": "/PersonalWebsite/static/media/propic.7e31c895.jpg"
+  },
+  {
+    "revision": "81491570efd59b8776bb632a37d0097d",
+    "url": "/PersonalWebsite/static/media/homePage.81491570.jpg"
   },
   {
     "revision": "893f80daa93f324789ad80b1b2518e07",
@@ -32,7 +32,11 @@ self.__precacheManifest = [
     "url": "/PersonalWebsite/static/media/rl.19e07edf.jpg"
   },
   {
-    "revision": "e058033ee76a0f7ebd1afa7fcad87445",
+    "revision": "f2287a8431f3a5d995bdbf29fc54e842",
+    "url": "/PersonalWebsite/static/media/puntaCana.f2287a84.jpg"
+  },
+  {
+    "revision": "32aed1c614dae18a087f057eb5ac65fd",
     "url": "/PersonalWebsite/index.html"
   }
 ];
