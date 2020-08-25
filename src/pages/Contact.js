@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Col, Row } from "react-bootstrap";
-
 import profileImage from "../assets/puntaCana.jpg";
+import * as constants from "../Constants.js";
 
 const Styles = styled.div`
   .link {
@@ -52,7 +52,13 @@ export const Contact = () => (
             </a>
           </h3>
         </Col>
-        <Col style={{ marginTop: "5vh" }}>
+        <Col
+          style={
+            document.documentElement.clientWidth < constants.DESKTOP_VIEWPORT
+              ? { display: "none" }
+              : { marginTop: "5vh" }
+          }
+        >
           <img alt="Alt" src={profileImage} className="profileImage" />
         </Col>
       </Row>

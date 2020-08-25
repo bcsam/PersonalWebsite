@@ -20,15 +20,16 @@ class App extends Component {
           {/* <Jumbotron /> */}
 
           <Switch>
-            <Route exact path={routes.HOME} component={Home} />
+            <ScrollToTop>
+              <Route exact path={routes.HOME} component={Home} />
 
-            <Layout>
-              <Route path={routes.ABOUT} component={About} />
-              <Route path={routes.WORK} component={Work} />
-              <Route path={routes.RESEARCH} component={Research} />
-              <Route path={routes.CONTACT} component={Contact} />
-            </Layout>
-
+              <Layout>
+                <Route path={routes.ABOUT} component={About} />
+                <Route path={routes.WORK} component={Work} />
+                <Route path={routes.RESEARCH} component={Research} />
+                <Route path={routes.CONTACT} component={Contact} />
+              </Layout>
+            </ScrollToTop>
             <Route component={NoMatch} />
           </Switch>
           <Footer />
@@ -38,19 +39,16 @@ class App extends Component {
   }
 }
 
-// <Switch>
-// <Route exact path="/">
-//   <Home />
-// </Route>
-// <Route path="/old-match">
-//   <Redirect to="/will-match" />
-// </Route>
-// <Route path="/will-match">
-//   <WillMatch />
-// </Route>
-// <Route path="*">
-//   <NoMatch />
-// </Route>
-// </Switch>
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  render() {
+    return this.props.children;
+  }
+}
 
 export default App;

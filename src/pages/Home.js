@@ -3,6 +3,7 @@ import { Redirect } from "react-router";
 import { Container, Card, Button, CardDeck, Col, Row } from "react-bootstrap";
 import "./Home.css";
 import WorkModal from "../components/WorkModal";
+import * as constants from "../Constants.js";
 import * as routes from "../routes.js";
 
 //assets
@@ -12,6 +13,7 @@ import haystackLogo from "../assets/haystack.png";
 import homeBanner from "../assets/homePage.jpg";
 import mvlLogo from "../assets/mvl.jpg";
 import openLinkLogo from "../assets/openlink.jpg";
+import painterlyImage from "../assets/painterly_square.png";
 import profileImage from "../assets/propic.jpg";
 import questLogo from "../assets/quest.png";
 import rlLogo from "../assets/rl.jpg";
@@ -39,8 +41,9 @@ export default class Home extends Component {
     };
 
     this.state = {
-      isWorkExpanded: false,
       isProjectsExpanded: false,
+      isResearchExpanded: false,
+      isWorkExpanded: false,
       redirectTo: "",
       showWorkModal: false,
 
@@ -71,8 +74,8 @@ export default class Home extends Component {
         {/* Top Display */}
         <div style={{ marginTop: "56px" }}>
           <div className="homeDisplayText">
-            <h1 style={{ fontSize: "5vw" }}>Brent Samuels</h1>
-            <h3 style={{ fontSize: "2vw" }}>
+            <h1 style={{ fontSize: "max(5vw, 4vh)" }}>Brent Samuels</h1>
+            <h3 style={{ fontSize: "max(2vw, 1.5vh)" }}>
               Software Engineer, Web Developer
             </h3>
           </div>
@@ -81,9 +84,9 @@ export default class Home extends Component {
         </div>
 
         {/* About Me */}
-        <Container style={{ paddingTop: "10vh", height: "80vh" }}>
+        <Container style={{ paddingTop: "10vh", minHeight: "95vh" }}>
           <Row>
-            <Col style={{ marginTop: "5vh" }}>
+            <Col style={{ marginTop: "2vw" }}>
               <h1>About Me</h1>
               <p>
                 Hi, my name is <b>Brent Samuels</b>. I graduated from The
@@ -106,12 +109,11 @@ export default class Home extends Component {
               <Button
                 variant="outline-dark"
                 style={{ marginRight: "1vw" }}
-                href="../assets/resume.pdf"
+                onClick={() => this.setState({ redirectTo: routes.WORK })}
               >
-                View Resume
+                View Experience
               </Button>
 
-              {/* href="mailto:gklitt@gmail.com" */}
               <Button
                 variant="outline-dark"
                 onClick={() => this.setState({ redirectTo: routes.CONTACT })}
@@ -119,7 +121,14 @@ export default class Home extends Component {
                 Contact Me
               </Button>
             </Col>
-            <Col>
+            <Col
+              style={
+                document.documentElement.clientWidth <
+                constants.DESKTOP_VIEWPORT
+                  ? { display: "none" }
+                  : {}
+              }
+            >
               <img alt="Alt" src={profileImage} className="profileImage" />
             </Col>
           </Row>
@@ -140,13 +149,15 @@ export default class Home extends Component {
 
         <div
           className="workExperienceContainer"
-          style={
-            this.state.isWorkExpanded
-              ? { backgroundColor: "whitesmoke", height: "125vh" }
-              : { backgroundColor: "whitesmoke", height: "90vh" }
-          }
+          style={{ backgroundColor: "whitesmoke" }}
         >
-          <Container style={{ marginTop: "10vh", padding: "10vh 0" }}>
+          <Container
+            style={{
+              backgroundColor: "whitesmoke",
+              minHeight: "95vh",
+              padding: "10vh 0",
+            }}
+          >
             <h1 className="flexbox">Work Experience</h1>
             <CardDeck>
               <Card
@@ -201,15 +212,21 @@ export default class Home extends Component {
                 </Card.Body>
               </Card>
             </CardDeck>
-            <div style={{ marginLeft: "auto", marginRight: "auto" }}>
-              {/* TODO: make this better */}
+
+            <div
+              style={
+                this.state.isWorkExpanded
+                  ? { display: "none" }
+                  : { width: "100%", position: "relative", marginTop: "10vh" }
+              }
+            >
               <Button
                 variant="outline-dark"
-                style={
-                  this.state.isWorkExpanded
-                    ? { display: "none" }
-                    : { marginLeft: "46%", marginTop: "5%" }
-                }
+                style={{
+                  position: "absolute",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
                 onClick={() => {
                   console.log("Hit me");
                   this.setState({ isWorkExpanded: true });
@@ -263,44 +280,110 @@ export default class Home extends Component {
                 </Card.Body>
               </Card>
 
+              {/* Place Holder */}
               <Card style={{ visibility: "hidden" }}></Card>
             </CardDeck>
           </Container>
         </div>
 
         {/* Research Experience */}
-        <Container
-          style={{ marginTop: "10vh", paddingTop: "10vh", height: "80vh" }}
-        >
+        <Container style={{ minHeight: "95vh", padding: "10vh 0" }}>
           <h1 className="flexbox">Research and Projects</h1>
           <CardDeck>
-            <Card className="researchCard">
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.NB)}
+            >
               <Card.Img variant="top" src={haystackLogo} />
               <Card.Body>
                 <Card.Title>MIT Haystack Group</Card.Title>
               </Card.Body>
             </Card>
 
-            <Card className="researchCard">
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.QUEST)}
+            >
               <Card.Img variant="top" src={questLogo} />
               <Card.Body>
                 <Card.Title>MIT Quest for Intelligence</Card.Title>
               </Card.Body>
             </Card>
 
-            <Card className="researchCard">
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.MVL)}
+            >
               <Card.Img variant="top" src={mvlLogo} />
               <Card.Body>
                 <Card.Title>MIT Man Vehicle Laboratory</Card.Title>
               </Card.Body>
             </Card>
 
-            <Card className="researchCard">
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.KINECT)}
+            >
               <Card.Img variant="top" src={rlLogo} />
               <Card.Body>
-                <Card.Title>Independent Tutorial</Card.Title>
+                <Card.Title>Kinect Gestural Classification Project</Card.Title>
               </Card.Body>
             </Card>
+          </CardDeck>
+
+          <div
+            style={
+              this.state.isResearchExpanded
+                ? { display: "none" }
+                : { width: "100%", position: "relative", marginTop: "10vh" }
+            }
+          >
+            <Button
+              variant="outline-dark"
+              style={{
+                position: "absolute",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+              onClick={() => {
+                console.log("Hit me");
+                this.setState({ isResearchExpanded: true });
+              }}
+            >
+              See More
+            </Button>
+          </div>
+
+          <CardDeck
+            style={
+              this.state.isResearchExpanded
+                ? { marginTop: "5vh" }
+                : { display: "none" }
+            }
+          >
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.JOBBIES)}
+            >
+              <Card.Img variant="top" src={rlLogo} />
+              <Card.Body>
+                <Card.Title>Jobbies Web Application</Card.Title>
+              </Card.Body>
+            </Card>
+
+            <Card
+              className="researchCard"
+              onClick={() => this.openWorkModal(this.workExperience.PAINTERLY)}
+            >
+              <Card.Img variant="top" src={painterlyImage} />
+              <Card.Body>
+                <Card.Title>Painterly Photo Rendering Project</Card.Title>
+              </Card.Body>
+            </Card>
+
+            {/* Place Holder */}
+            <Card style={{ visibility: "hidden" }}></Card>
+            <Card style={{ visibility: "hidden" }}></Card>
           </CardDeck>
         </Container>
       </>
@@ -309,18 +392,12 @@ export default class Home extends Component {
 
   setWorkInfo(workExperience) {
     switch (workExperience) {
-      // JOBBIES: 7,
-      // KINECT: 8,
-      // MVL: 9,
-      // NB: 10,
-      // PAINTERLY: 11,
-      // QUEST: 12,
-
+      // Work Experiences
       case this.workExperience.BRAINPOWER:
         this.setState({
           company: "Brain Power",
           position: "Technical Product Management Intern",
-          date: "Independent Activites Period (Winter) 2020",
+          date: "January-February 2020",
           location: "Cambridge, Massachusetts",
           description: "Description Coming Soon",
         });
@@ -384,12 +461,11 @@ export default class Home extends Component {
         });
         break;
 
-      //Done
       case this.workExperience.VIVINT:
         this.setState({
           company: "Vivint Smart Home",
           position: "Sofware Engineering Extern",
-          date: "Independent Activities Period (Winter break) 2018",
+          date: "January-February 2018",
           location: "Provo, Utah",
           description:
             "The problem that I addressed in my project was categorizing the data of Vivint home " +
@@ -406,6 +482,82 @@ export default class Home extends Component {
           position: "Sofware Engineering Intern",
           date: "Summer 2020",
           location: "New York, New York",
+          description: "Description Coming Soon",
+        });
+        break;
+
+      // JOBBIES: 7,
+      // KINECT: 8,
+      // MVL: 9,
+      // NB: 10,
+      // PAINTERLY: 11,
+      // QUEST: 12,
+
+      // Research and Projects
+      case this.workExperience.JOBBIES:
+        this.setState({
+          company: "Jobbies Web Application",
+          position: "Group Member",
+          date: "November-December 2019",
+          location: "Cambridge, Massachusetts",
+          description: "Description Coming Soon",
+        });
+        break;
+
+      case this.workExperience.KINECT:
+        this.setState({
+          company: "Kinect Gestural Classification Project",
+          position: "Project Creator",
+          date: "March-May 2020",
+          location: "Cambridge, Massachusetts",
+          description: "Description Coming Soon",
+        });
+        break;
+
+      case this.workExperience.MVL:
+        this.setState({
+          company: "MIT Man Vehicle Laboratory",
+          position: "Undergraduate Researcher (UROP)",
+          date: "February-June 2017",
+          location: "Cambridge, Massachusetts",
+          description: "Description Coming Soon",
+        });
+        break;
+
+      case this.workExperience.NB:
+        this.setState({
+          company: "MIT Haystack Group",
+          position: "Undergraduate Researcher (SuperUROP)",
+          date: "September 2019-May 2020",
+          location: "Cambridge, Massachusetts",
+          description:
+            "My project is predominately focused on full-stack development of an annotated textbook, " +
+            "called Nota Bene. More specifically, this website allows an instructor to create academic " +
+            "sections of students and upload pdf assignments. The students can subsequently leave comments " +
+            "and like other students’ comments in reference to specific parts of the text. My project is to " +
+            "extend the functionality of the current site by adding several features, including allowing " +
+            "archiving and deleting courses, allowing users to request membership in courses, and allowing " +
+            "students who switch sections to view comments and threads from their previous sections but not " +
+            "recent updates. For this project, I am mainly working in Vue.js and Node.js.",
+        });
+        break;
+
+      case this.workExperience.PAINTERLY:
+        this.setState({
+          company: "Painterly Photo Rendering Project",
+          position: "Project Creator",
+          date: "May 2019",
+          location: "Cambridge, Massachusetts",
+          description: "Description Coming Soon",
+        });
+        break;
+
+      case this.workExperience.QUEST:
+        this.setState({
+          company: "MIT Quest for Intelligence",
+          position: "Undergraduate Researcher (UROP)",
+          date: "January-May 2019",
+          location: "Cambridge, Massachusetts",
           description: "Description Coming Soon",
         });
         break;

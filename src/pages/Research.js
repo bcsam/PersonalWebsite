@@ -47,6 +47,11 @@ export const Research = () => (
       date="November-December 2020"
       description={["Point 1", "Point 2"]}
     />
+    <ResearchPageEntry
+      project="Painterly Photo Rendering Project"
+      date="May 2019"
+      description={["Point 1", "Point 2"]}
+    />
   </Container>
 );
 

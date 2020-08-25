@@ -34,7 +34,7 @@ export const Work = () => (
     <WorkPageEntry
       company="Brain Power"
       position="Technical Product Management Extern"
-      date="Independent Activites Period (Winter Break) 2020"
+      date="January-February 2020"
       location="Cambridge, Massachusetts"
       description={[
         "Led a sub-team of 5 through the design and development of a concept teaser mobile application to expose a larger audience of customers to a variety of the company’s Google Glass applications",
@@ -67,7 +67,7 @@ export const Work = () => (
     <WorkPageEntry
       company="Vivint Smart Home"
       position="Sofware Engineering Extern"
-      date="Independent Activites Period (Winter Break) 2018"
+      date="January-February 2018"
       location="Provo, Utah"
       description={[
         "Created a program to categorize the Elasticsearch data of triggered security devices in order to allow users to filter alarm notifications by device type",
@@ -82,6 +82,8 @@ export const Work = () => (
       location="Seattle, Washington"
       description={[
         "Created an Android messaging app on a team of 3 which gives numerical feedback about the tone, style, and social tendencies of messages in order to aid users on the autism spectrum with tone detection",
+        "Presented app to a crowd of 150 spectators",
+        "Underwent CodePath app development training and produced several apps including a mock Twitter app",
       ]}
     />
     <WorkPageEntry
@@ -89,7 +91,11 @@ export const Work = () => (
       position="Software Intern"
       date="May-June 2016"
       location="Burlington, Massachusetts"
-      description={["Point 1", "Point 2"]}
+      description={[
+        "Worked one-on-one with the founder of OpenLink Software to create and query profiles through use of RDF in Turtle notation and SPARQL",
+        "Studied various data topics including RDF-based linked data, digital sentence structure, and data integration",
+        "Delivered presentation of reflections to fellow classmates and faculty",
+      ]}
     />
   </Container>
 );

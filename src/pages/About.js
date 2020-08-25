@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import * as constants from "../Constants.js";
 
 import profileImage from "../assets/propic.jpg";
 
@@ -41,7 +42,13 @@ export const About = () => (
           including versions of Lorem Ipsum.
         </p>
       </Col>
-      <Col style={{ marginTop: "5vh" }}>
+      <Col
+        style={
+          document.documentElement.clientWidth < constants.DESKTOP_VIEWPORT
+            ? { display: "none" }
+            : { marginTop: "5vh" }
+        }
+      >
         <img alt="Alt" src={profileImage} className="profileImage" />
       </Col>
     </Row>

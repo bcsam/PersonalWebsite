@@ -1,0 +1,3 @@
+let DESKTOP_VIEWPORT = 900;
+
+export { DESKTOP_VIEWPORT };
