@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "def9df367e82f16d3f6c",
-    "url": "/PersonalWebsite/static/css/main.8c989506.chunk.css"
+    "revision": "e003f68a4a15c157fbae",
+    "url": "/PersonalWebsite/static/css/main.6482b197.chunk.css"
   },
   {
-    "revision": "def9df367e82f16d3f6c",
-    "url": "/PersonalWebsite/static/js/main.f44b2f9e.chunk.js"
+    "revision": "e003f68a4a15c157fbae",
+    "url": "/PersonalWebsite/static/js/main.0d2aabbb.chunk.js"
   },
   {
     "revision": "2e985b43df9fb49ad811",
     "url": "/PersonalWebsite/static/js/runtime~main.53ae6336.js"
   },
   {
-    "revision": "fdb2882ee495ffa6998a",
-    "url": "/PersonalWebsite/static/js/2.08ea2eb6.chunk.js"
+    "revision": "23e882093fd0e7ec3238",
+    "url": "/PersonalWebsite/static/js/2.57a366c2.chunk.js"
   },
   {
     "revision": "7e31c89556d988f126dd739dfa02b7c0",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/PersonalWebsite/static/media/puntaCana.f2287a84.jpg"
   },
   {
-    "revision": "2020c3b36175859a838c2747c46a5e63",
+    "revision": "e7093a4d3796150f71e3d44cf86551f1",
     "url": "/PersonalWebsite/index.html"
   }
 ];
