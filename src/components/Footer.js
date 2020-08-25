@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import styled from "styled-components";
+import * as routes from "../routes.js";
 
 const Styles = styled.div`
   .navbar {
@@ -22,28 +23,7 @@ const Styles = styled.div`
 export const Footer = () => (
   <Styles>
     <Navbar sticky="bottom" expand="lg">
-      <Navbar.Brand href="/">Created by Brent Samuels</Navbar.Brand>
-      {/* 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/">Home</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/contact">Contact</Link>
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse> */}
+      <Navbar.Brand href={routes.HOME}>Created by Brent Samuels</Navbar.Brand>
     </Navbar>
   </Styles>
 );

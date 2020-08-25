@@ -24,12 +24,10 @@ const Styles = styled.div`
 `;
 
 export const NavigationBar = () => {
-  var pathBase = "/PersonalWebsite/";
-
   return (
     <Styles>
       <Navbar fixed="top" expand="lg">
-        <Navbar.Brand href={pathBase}>Brent Samuels</Navbar.Brand>
+        <Navbar.Brand href={routes.HOME}>Brent Samuels</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

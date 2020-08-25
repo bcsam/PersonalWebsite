@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
+import { Link } from "react-router-dom";
 import { Container, Card, Button, CardDeck, Col, Row } from "react-bootstrap";
 import "./Home.css";
 import WorkModal from "../components/WorkModal";
@@ -96,14 +97,21 @@ export default class Home extends Component {
                 Human Computer Interactions (HCI) and particularly full-stack
                 web development.
                 <b> </b>
-                <a
+                {/* <a
                   href="/PersonalWebsite/about"
                   style={{
                     color: "black",
                   }}
+                > */}
+                <Link
+                  style={{
+                    color: "black",
+                  }}
+                  to={routes.ABOUT}
                 >
                   <b>See More</b>
-                </a>
+                </Link>
+                {/* </a> */}
               </p>
 
               <Button

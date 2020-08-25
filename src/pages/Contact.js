@@ -13,7 +13,12 @@ const Styles = styled.div`
 
 export const Contact = () => (
   <Styles>
-    <Container style={{ paddingTop: "10vh", height: "95vh" }}>
+    <Container
+      style={{
+        paddingTop: "10vh",
+        height: `calc(100vh - ${constants.NAVBAR_HEIGHT}px)`,
+      }}
+    >
       <Row>
         <Col style={{ marginTop: "10vh" }}>
           <h1>
