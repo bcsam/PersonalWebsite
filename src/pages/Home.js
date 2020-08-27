@@ -12,12 +12,13 @@ import bpLogo from "../assets/brainpower.png";
 import facebookLogo from "../assets/facebook.png";
 import haystackLogo from "../assets/haystack.png";
 import homeBanner from "../assets/homePage.jpg";
+import kinectImage from "../assets/kinect.jpeg";
+import mitLogo from "../assets/mit.png";
 import mvlLogo from "../assets/mvl.jpg";
 import openLinkLogo from "../assets/openlink.jpg";
 import painterlyImage from "../assets/painterly_square.png";
 import profileImage from "../assets/propic.jpg";
 import questLogo from "../assets/quest.png";
-import rlLogo from "../assets/rl.jpg";
 import vivintLogo from "../assets/vivint.jpg";
 import yextLogo from "../assets/yext.png";
 
@@ -63,6 +64,10 @@ export default class Home extends Component {
     this.setState({
       showWorkModal: true,
     });
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -181,6 +186,18 @@ export default class Home extends Component {
               <Card
                 className="workCard"
                 onClick={() =>
+                  this.openWorkModal(this.workExperience.BRAINPOWER)
+                }
+              >
+                <Card.Img variant="top" src={bpLogo} />
+                <Card.Body>
+                  <Card.Title>Brain Power TPM</Card.Title>
+                </Card.Body>
+              </Card>
+
+              <Card
+                className="workCard"
+                onClick={() =>
                   this.openWorkModal(this.workExperience.FACEBOOK_NYC)
                 }
               >
@@ -191,22 +208,6 @@ export default class Home extends Component {
                 />
                 <Card.Body>
                   <Card.Title>Facebook SWE (NYC)</Card.Title>
-                </Card.Body>
-              </Card>
-
-              <Card
-                className="workCard"
-                onClick={() =>
-                  this.openWorkModal(this.workExperience.FACEBOOK_MPK)
-                }
-              >
-                <Card.Img
-                  variant="top"
-                  src={facebookLogo}
-                  style={{ boxShadow: "0 1px lightgray" }}
-                />
-                <Card.Body>
-                  <Card.Title>Facebook SWE (MPK)</Card.Title>
                 </Card.Body>
               </Card>
 
@@ -254,6 +255,21 @@ export default class Home extends Component {
             >
               <Card
                 className="workCard"
+                onClick={() =>
+                  this.openWorkModal(this.workExperience.FACEBOOK_MPK)
+                }
+              >
+                <Card.Img
+                  variant="top"
+                  src={facebookLogo}
+                  style={{ boxShadow: "0 1px lightgray" }}
+                />
+                <Card.Body>
+                  <Card.Title>Facebook SWE (MPK)</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card
+                className="workCard"
                 onClick={() => this.openWorkModal(this.workExperience.FBU)}
               >
                 <Card.Img
@@ -263,18 +279,6 @@ export default class Home extends Component {
                 />
                 <Card.Body>
                   <Card.Title>Facebook University</Card.Title>
-                </Card.Body>
-              </Card>
-
-              <Card
-                className="workCard"
-                onClick={() =>
-                  this.openWorkModal(this.workExperience.BRAINPOWER)
-                }
-              >
-                <Card.Img variant="top" src={bpLogo} />
-                <Card.Body>
-                  <Card.Title>Brain Power TPM</Card.Title>
                 </Card.Body>
               </Card>
 
@@ -332,7 +336,7 @@ export default class Home extends Component {
               className="researchCard"
               onClick={() => this.openWorkModal(this.workExperience.KINECT)}
             >
-              <Card.Img variant="top" src={rlLogo} />
+              <Card.Img variant="top" src={kinectImage} />
               <Card.Body>
                 <Card.Title>Kinect Gestural Classification Project</Card.Title>
               </Card.Body>
@@ -373,9 +377,9 @@ export default class Home extends Component {
               className="researchCard"
               onClick={() => this.openWorkModal(this.workExperience.JOBBIES)}
             >
-              <Card.Img variant="top" src={rlLogo} />
+              <Card.Img variant="top" src={mitLogo} />
               <Card.Body>
-                <Card.Title>Jobbies Web Application</Card.Title>
+                <Card.Title>Jobbies Web Application Project</Card.Title>
               </Card.Body>
             </Card>
 
