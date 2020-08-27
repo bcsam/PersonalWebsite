@@ -1,19 +1,19 @@
 {
   "main.css": "/PersonalWebsite/static/css/main.6482b197.chunk.css",
-  "main.js": "/PersonalWebsite/static/js/main.0d2aabbb.chunk.js",
-  "main.js.map": "/PersonalWebsite/static/js/main.0d2aabbb.chunk.js.map",
+  "main.js": "/PersonalWebsite/static/js/main.cc3caa0c.chunk.js",
+  "main.js.map": "/PersonalWebsite/static/js/main.cc3caa0c.chunk.js.map",
   "runtime~main.js": "/PersonalWebsite/static/js/runtime~main.53ae6336.js",
   "runtime~main.js.map": "/PersonalWebsite/static/js/runtime~main.53ae6336.js.map",
-  "static/js/2.57a366c2.chunk.js": "/PersonalWebsite/static/js/2.57a366c2.chunk.js",
-  "static/js/2.57a366c2.chunk.js.map": "/PersonalWebsite/static/js/2.57a366c2.chunk.js.map",
+  "static/js/2.01eb31f9.chunk.js": "/PersonalWebsite/static/js/2.01eb31f9.chunk.js",
+  "static/js/2.01eb31f9.chunk.js.map": "/PersonalWebsite/static/js/2.01eb31f9.chunk.js.map",
   "index.html": "/PersonalWebsite/index.html",
-  "precache-manifest.45b7edb6c027cb6a7c629dddf90158fd.js": "/PersonalWebsite/precache-manifest.45b7edb6c027cb6a7c629dddf90158fd.js",
+  "precache-manifest.385fa8aa7e12e559ddd66d57f47a4281.js": "/PersonalWebsite/precache-manifest.385fa8aa7e12e559ddd66d57f47a4281.js",
   "service-worker.js": "/PersonalWebsite/service-worker.js",
   "static/css/main.6482b197.chunk.css.map": "/PersonalWebsite/static/css/main.6482b197.chunk.css.map",
   "static/media/brainpower.png": "/PersonalWebsite/static/media/brainpower.893f80da.png",
   "static/media/homePage.jpg": "/PersonalWebsite/static/media/homePage.81491570.jpg",
-  "static/media/painterly_square.png": "/PersonalWebsite/static/media/painterly_square.24a301e3.png",
+  "static/media/kinect.jpeg": "/PersonalWebsite/static/media/kinect.d926b3cf.jpeg",
+  "static/media/painterly_square.png": "/PersonalWebsite/static/media/painterly_square.481bff0f.png",
   "static/media/propic.jpg": "/PersonalWebsite/static/media/propic.7e31c895.jpg",
-  "static/media/puntaCana.jpg": "/PersonalWebsite/static/media/puntaCana.f2287a84.jpg",
-  "static/media/rl.jpg": "/PersonalWebsite/static/media/rl.19e07edf.jpg"
+  "static/media/puntaCana.jpg": "/PersonalWebsite/static/media/puntaCana.f2287a84.jpg"
 }

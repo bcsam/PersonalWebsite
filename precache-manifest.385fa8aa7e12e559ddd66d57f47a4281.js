@@ -1,27 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "e003f68a4a15c157fbae",
+    "revision": "dd4bb44a28f8d595e37f",
     "url": "/PersonalWebsite/static/css/main.6482b197.chunk.css"
   },
   {
-    "revision": "e003f68a4a15c157fbae",
-    "url": "/PersonalWebsite/static/js/main.0d2aabbb.chunk.js"
+    "revision": "dd4bb44a28f8d595e37f",
+    "url": "/PersonalWebsite/static/js/main.cc3caa0c.chunk.js"
   },
   {
     "revision": "2e985b43df9fb49ad811",
     "url": "/PersonalWebsite/static/js/runtime~main.53ae6336.js"
   },
   {
-    "revision": "23e882093fd0e7ec3238",
-    "url": "/PersonalWebsite/static/js/2.57a366c2.chunk.js"
+    "revision": "db678d23ffa6c240fa1e",
+    "url": "/PersonalWebsite/static/js/2.01eb31f9.chunk.js"
   },
   {
     "revision": "7e31c89556d988f126dd739dfa02b7c0",
     "url": "/PersonalWebsite/static/media/propic.7e31c895.jpg"
-  },
-  {
-    "revision": "19e07edf8bc6b77ac37bb96266ccf42e",
-    "url": "/PersonalWebsite/static/media/rl.19e07edf.jpg"
   },
   {
     "revision": "893f80daa93f324789ad80b1b2518e07",
@@ -32,15 +28,19 @@ self.__precacheManifest = [
     "url": "/PersonalWebsite/static/media/homePage.81491570.jpg"
   },
   {
-    "revision": "24a301e38a50eeda9cbc40594543173a",
-    "url": "/PersonalWebsite/static/media/painterly_square.24a301e3.png"
+    "revision": "d926b3cf792a037258b4202067f12647",
+    "url": "/PersonalWebsite/static/media/kinect.d926b3cf.jpeg"
+  },
+  {
+    "revision": "481bff0fbfb512a1374e444f9bef9c06",
+    "url": "/PersonalWebsite/static/media/painterly_square.481bff0f.png"
   },
   {
     "revision": "f2287a8431f3a5d995bdbf29fc54e842",
     "url": "/PersonalWebsite/static/media/puntaCana.f2287a84.jpg"
   },
   {
-    "revision": "e7093a4d3796150f71e3d44cf86551f1",
+    "revision": "5fb4aea98823473a096e048b5d32d955",
     "url": "/PersonalWebsite/index.html"
   }
 ];
