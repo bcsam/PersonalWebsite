@@ -17,7 +17,7 @@ import mitLogo from "../assets/mit.png";
 import mvlLogo from "../assets/mvl.jpg";
 import openLinkLogo from "../assets/openlink.jpg";
 import painterlyImage from "../assets/painterly_square.png";
-import profileImage from "../assets/propic.jpg";
+import profileImage from "./assets/propic.jpg";
 import questLogo from "../assets/quest.png";
 import vivintLogo from "../assets/vivint.jpg";
 import yextLogo from "../assets/yext.png";
