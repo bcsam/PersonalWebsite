@@ -33,7 +33,7 @@ class App extends Component {
               <Research />
             </Route>
 
-            <Route path={routes.CONTACT} component={Contact}>
+            <Route path={routes.CONTACT}>
               <Contact />
             </Route>
 

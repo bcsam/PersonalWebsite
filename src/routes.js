@@ -1,8 +1,9 @@
-let HOME = "/PersonalWebsite/";
-let ABOUT = "/PersonalWebsite/about/";
-let WORK = "/PersonalWebsite/work/";
-let RESEARCH = "/PersonalWebsite/research/";
+// let BASE = "/PersonalWebsite";
+let HOME = "/";
+let ABOUT = "/about/";
+let WORK = "/work/";
+let RESEARCH = "/research/";
 // let PERSONAL = "/PersonalWebsite/personal/";
-let CONTACT = "/PersonalWebsite/contact/";
+let CONTACT = "/contact/";
 
 export { HOME, ABOUT, WORK, RESEARCH, CONTACT };
