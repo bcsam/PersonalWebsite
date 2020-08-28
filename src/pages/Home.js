@@ -22,6 +22,8 @@ import questLogo from "./assets/quest.png";
 import vivintLogo from "./assets/vivint.jpg";
 import yextLogo from "./assets/yext.png";
 
+// src='<%=ResolveUrl("~/Images/Progress.gif")%>'
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -102,12 +104,6 @@ export default class Home extends Component {
                 Human Computer Interactions (HCI) and particularly full-stack
                 web development.
                 <b> </b>
-                {/* <a
-                  href="/PersonalWebsite/about"
-                  style={{
-                    color: "black",
-                  }}
-                > */}
                 <Link
                   style={{
                     color: "black",
