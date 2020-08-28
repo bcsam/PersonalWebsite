@@ -8,19 +8,19 @@ import * as constants from "../Constants.js";
 import * as routes from "../routes.js";
 
 //assets
-import bpLogo from "../assets/brainpower.png";
-import facebookLogo from "../assets/facebook.png";
-import haystackLogo from "../assets/haystack.png";
-import homeBanner from "../assets/homePage.jpg";
-import kinectImage from "../assets/kinect.jpeg";
-import mitLogo from "../assets/mit.png";
-import mvlLogo from "../assets/mvl.jpg";
-import openLinkLogo from "../assets/openlink.jpg";
-import painterlyImage from "../assets/painterly_square.png";
+import bpLogo from "./assets/brainpower.png";
+import facebookLogo from "./assets/facebook.png";
+import haystackLogo from "./assets/haystack.png";
+import homeBanner from "./assets/homePage.jpg";
+import kinectImage from "./assets/kinect.jpeg";
+import mitLogo from "./assets/mit.png";
+import mvlLogo from "./assets/mvl.jpg";
+import openLinkLogo from "./assets/openlink.jpg";
+import painterlyImage from "./assets/painterly_square.png";
 import profileImage from "./assets/propic.jpg";
-import questLogo from "../assets/quest.png";
-import vivintLogo from "../assets/vivint.jpg";
-import yextLogo from "../assets/yext.png";
+import questLogo from "./assets/quest.png";
+import vivintLogo from "./assets/vivint.jpg";
+import yextLogo from "./assets/yext.png";
 
 export default class Home extends Component {
   constructor(props) {
