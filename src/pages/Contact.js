@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Col, Row } from "react-bootstrap";
-import profileImage from "../assets/puntaCana.jpg";
+import profileImage from "./assets/puntaCana.jpg";
 import * as constants from "../Constants.js";
 
 const Styles = styled.div`

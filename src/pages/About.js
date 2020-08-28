@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import * as constants from "../Constants.js";
 
-import profileImage from "../assets/propic.jpg";
+import profileImage from "./assets/propic.jpg";
 
 export default class About extends Component {
   componentWillMount() {
