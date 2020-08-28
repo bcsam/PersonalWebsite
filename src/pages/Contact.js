@@ -16,7 +16,8 @@ export const Contact = () => (
     <Container
       style={{
         paddingTop: "10vh",
-        height: `calc(100vh - ${constants.NAVBAR_HEIGHT}px)`,
+        minHeight: `calc(100vh - ${constants.NAVBAR_HEIGHT}px)`,
+        height: `100%`,
       }}
     >
       <Row>

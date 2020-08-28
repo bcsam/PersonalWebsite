@@ -14,7 +14,8 @@ export default class About extends Component {
       <Container
         style={{
           paddingTop: "10vh",
-          height: `calc(100vh - ${constants.NAVBAR_HEIGHT}px)`,
+          minHeight: `calc(100vh - ${constants.NAVBAR_HEIGHT}px)`,
+          height: `100%`,
         }}
       >
         <Row>
@@ -42,7 +43,7 @@ export default class About extends Component {
 
             <h1 style={{ marginTop: "5vh" }}>About This Site</h1>
             <p>
-              I coded this website from scratch through use of React.js and
+              I created this website from scratch through use of React.js and
               React Bootstrap as an independent project. I created this website
               for the dual purpose of the technical exercise and the personal
               documentation. More specifically, I treated the creation of this

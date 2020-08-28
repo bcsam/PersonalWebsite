@@ -22,8 +22,6 @@ import questLogo from "./assets/quest.png";
 import vivintLogo from "./assets/vivint.jpg";
 import yextLogo from "./assets/yext.png";
 
-// src='<%=ResolveUrl("~/Images/Progress.gif")%>'
-
 export default class Home extends Component {
   constructor(props) {
     super(props);
