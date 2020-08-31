@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fba57539b4fc30e0cb4d",
+    "revision": "bd48b54b71461ef065ca",
     "url": "/static/css/main.6482b197.chunk.css"
   },
   {
-    "revision": "fba57539b4fc30e0cb4d",
-    "url": "/static/js/main.f9431928.chunk.js"
+    "revision": "bd48b54b71461ef065ca",
+    "url": "/static/js/main.eb2eaa5b.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/puntaCana.f2287a84.jpg"
   },
   {
-    "revision": "54ac17c128ad0cfe271e32a248d9213f",
+    "revision": "c6852a2453022dce9132c76d50f6fde4",
     "url": "/index.html"
   }
 ];
