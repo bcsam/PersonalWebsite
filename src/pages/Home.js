@@ -456,7 +456,7 @@ export default class Home extends Component {
           location: "Seattle, Washington",
           description:
             "For this internship, I worked on a team of three to create an app which gives feedback about the " +
-            "tone, style, and social tendencies of messages to help users on the autism spectrum with tone detection." +
+            "tone, style, and social tendencies of messages to help users on the autism spectrum with tone detection. " +
             "The app allows the user to send and receive messages from their phone number, color codes the messages " +
             "based on the primary emotion, shows numerical ratings on the tone of a given message when clicked, and " +
             "shows the average tone of interactions with a given user when clicked. At the end of the internship, we " +
@@ -526,7 +526,7 @@ export default class Home extends Component {
           description:
             "This project was a part of my advanced undergraduate study (AUS) in web development. The problem that " +
             "we addressed was that during a job recruiting season clients have a difficult time keeping track of " +
-            "all of their job applications, application statuses, and recruiting emails and often rely on spreadsheets." +
+            "all of their job applications, application statuses, and recruiting emails and often rely on spreadsheets. " +
             "As a team of four, we created a web application that filters and displays all the user's recruiting emails and " +
             "allows the user to create and attach them to jobbie cards. Each jobbie card represents an application to a " +
             "particular role at a particular company including the position, company, application status, and time between " +
@@ -542,10 +542,10 @@ export default class Home extends Component {
           location: "Cambridge, Massachusetts",
           description:
             "This project was a part of my advanced undergraduate study (AUS) in multi-modal user " +
-            "interfaces. The problem that I was addressing is that when dance choreographers teach it is often " +
+            "interfaces. The problem that I was addressing is that when dance choreographers teach, it is often " +
             "difficult for them to give their dancers individual feedback. I created a web application which allows " +
-            "a dancer to record themselves, will report when the dancer's movement was significantly different from a " +
-            "recording of their choreographer, and will display side by side videos starting at the time when they differ." +
+            "a dancer to record themself, will report when the dancer's movement was significantly different from a " +
+            "recording of their choreographer, and will display side by side videos starting at the time when they differ. " +
             "I created the app through development in Vue.js, python, and processing with help of a processing skeleton " +
             "tracking package.",
         });
@@ -609,9 +609,9 @@ export default class Home extends Component {
           date: "January-May 2019",
           location: "Cambridge, Massachusetts",
           description:
-            "The problem that we addressed was making machine learning concepts more accessible to kids in grades " +
-            "K-12. My main project was developing a GANpaint Scratch block extension to teach the students " +
-            "about generative adversarial networks (GANs). GANpaint is an MIT developed application which " +
+            "The problem that we addressed was making machine learning concepts more accessible to kids " +
+            "in grades K-12. My main project was developing a GANpaint Scratch block extension to teach " +
+            "the students about generative adversarial networks (GANs). GANpaint is an MIT developed application " +
             "which renders a photo-realistic image, allows a user to mutate the image with a pointer and " +
             "a selection of options, and then regenerates a new photo-realistic image with the mutation.",
         });

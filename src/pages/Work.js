@@ -18,8 +18,8 @@ export default class Work extends Component {
           from industy experience in the form of internships. I did my first
           internship in my senior year of high school as a part of a senior
           project. Since then I've done longer internships over each summer and
-          I've done a couple of shorter internships over MIT's extended winter
-          break, called the Independent Activities Period (IAP).
+          I've done shorter internships over MIT's extended winter break, known
+          as the Independent Activities Period (IAP).
         </p>
 
         <h1>Industry Experience</h1>
