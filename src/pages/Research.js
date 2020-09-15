@@ -42,7 +42,7 @@ export default class Research extends Component {
           project="Nota Bene Annotated Textbook SuperUROP"
           date="August 2019-June 2020"
           description={[
-            "Spearheaded full-stack development of an anotated textbook website using Vue.js, Node.js, and PostgreSQL",
+            "Spearheaded full-stack development of an annotated textbook website using Vue.js, Node.js, and PostgreSQL",
             "Tested usability and effectiveness of website through user testing at UC Davis",
             "Presented results of research through a series of presentations and a thesis",
           ]}

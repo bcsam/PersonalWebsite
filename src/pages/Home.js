@@ -451,7 +451,7 @@ export default class Home extends Component {
       case this.workExperience.FBU:
         this.setState({
           company: "Facebook University",
-          position: "Mobile Application Development Intern",
+          position: "Android Development Intern",
           date: "Summer 2017",
           location: "Seattle, Washington",
           description:
@@ -554,7 +554,7 @@ export default class Home extends Component {
       case this.workExperience.MVL:
         this.setState({
           company: "MIT Man Vehicle Laboratory",
-          position: "Undergraduate Researcher (UROP)",
+          position: "Sponsored Researcher (UROP)",
           date: "February-June 2017",
           location: "Cambridge, Massachusetts",
           description:
@@ -570,7 +570,7 @@ export default class Home extends Component {
       case this.workExperience.NB:
         this.setState({
           company: "MIT Haystack Group",
-          position: "Undergraduate Researcher (SuperUROP)",
+          position: "Sponsored Researcher (SuperUROP)",
           date: "September 2019-May 2020",
           location: "Cambridge, Massachusetts",
           description:
@@ -605,7 +605,7 @@ export default class Home extends Component {
       case this.workExperience.QUEST:
         this.setState({
           company: "MIT Quest for Intelligence",
-          position: "Undergraduate Researcher (UROP)",
+          position: "Sponsored Researcher (UROP)",
           date: "January-May 2019",
           location: "Cambridge, Massachusetts",
           description:
