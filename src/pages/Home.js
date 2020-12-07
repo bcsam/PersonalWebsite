@@ -3,6 +3,7 @@ import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { Container, Card, Button, CardDeck, Col, Row } from "react-bootstrap";
 import "./Home.css";
+import WORK_EXPERIENCES from "./shared/workExperience";
 import WorkModal from "../components/WorkModal";
 import * as constants from "../Constants.js";
 import * as routes from "../routes.js";
