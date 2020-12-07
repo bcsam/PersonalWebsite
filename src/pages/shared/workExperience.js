@@ -1,6 +1,15 @@
 export const WORK_EXPERIENCES = 
     [
         {
+            id: 0,
+            company: "Bloomberg L.P.",
+            position: "Software Engineer",
+            date: "January 2021-Present",
+            location: "New York, New York",
+            description: "Coming Soon!"
+        },
+        {
+            id: 1,
             company: "Brain Power",
             position: "Technical Product Management Intern",
             date: "January-February 2020",
@@ -14,6 +23,7 @@ export const WORK_EXPERIENCES =
               "development stories on Jira.",
         },
         {
+            id: 2,
             company: "Facebook",
             position: "Sofware Engineering Intern",
             date: "Summer 2018",
@@ -28,6 +38,7 @@ export const WORK_EXPERIENCES =
               "and Hack.",
         },
         {
+            id: 3,
             company: "Facebook",
             position: "Sofware Engineering Intern",
             date: "Summer 2019",
@@ -41,6 +52,7 @@ export const WORK_EXPERIENCES =
               "project I coded predominately in React.js and Hack.",
         },
         {
+            id: 4,
             company: "Facebook University",
             position: "Android Development Intern",
             date: "Summer 2017",
@@ -54,6 +66,7 @@ export const WORK_EXPERIENCES =
               "presented our prototype of the app to a crowd of 150 Facebook employees.",
         },
         {
+            id: 5,
             company: "OpenLink Software",
             position: "Sofware Engineering Intern",
             date: "May-June 2016",
@@ -66,6 +79,7 @@ export const WORK_EXPERIENCES =
               "of my experience to students and faculty at my school.",
         },
         {
+            id: 6,
             company: "Vivint Smart Home",
             position: "Sofware Engineering Extern",
             date: "January-February 2018",
@@ -78,6 +92,7 @@ export const WORK_EXPERIENCES =
               "incoming fields. For this project, I worked predominately in Python and partially in Go.",
         },
         {
+            id: 7,
             company: "Yext",
             position: "Sofware Engineering Intern",
             date: "Summer 2020",
@@ -92,6 +107,7 @@ export const WORK_EXPERIENCES =
 
         // Research and Projects
         {
+            id: 8,
             company: "Jobbies Web Application",
             position: "Group Member",
             date: "November-December 2019",
@@ -106,6 +122,7 @@ export const WORK_EXPERIENCES =
               "updates. We created the application through use of Vue.js and Gmail API services.",
         },
         {
+            id: 9,
             company: "Kinect Gestural Classification Project",
             position: "Project Creator",
             date: "March-May 2020",
@@ -120,6 +137,7 @@ export const WORK_EXPERIENCES =
               "tracking package.",
         },
         {
+          id: 10,
           company: "MIT Man Vehicle Laboratory",
           position: "Sponsored Researcher (UROP)",
           date: "February-June 2017",
@@ -133,6 +151,7 @@ export const WORK_EXPERIENCES =
             "our implementation of SAGAT, classifying the results of the assessment, and proctoring user testing.",
         },
         {
+            id: 11,
             company: "MIT Haystack Group",
             position: "Sponsored Researcher (SuperUROP)",
             date: "September 2019-May 2020",
@@ -148,6 +167,7 @@ export const WORK_EXPERIENCES =
               "recent updates. For this project, I was mainly working in Vue.js and Node.js.",
         },
         {
+            id: 12,
             company: "Painterly Photo Rendering Project",
             position: "Project Creator",
             date: "May 2019",
@@ -162,6 +182,7 @@ export const WORK_EXPERIENCES =
               "to an initially blank image using this information for density and angles of the brushstrokes.",
         },
         {
+            id: 13,
             company: "MIT Quest for Intelligence",
             position: "Sponsored Researcher (UROP)",
             date: "January-May 2019",
