@@ -70,6 +70,7 @@ export default class Research extends Component {
         { WORK_EXPERIENCES.filter((project) => project.workType == "project").map((project) => {
           return(
             <ResearchPageEntry
+              image={project.image}
               project={project.company}
               date={project.date}
               description={project.shortDescription}

@@ -2,7 +2,7 @@ export const WORK_EXPERIENCES =
     [
         {
             id: 0,
-            image: "",
+            image: "/assets/bloomberg.png",
             company: "Bloomberg L.P.",
             position: "Software Engineer",
             date: "January 2021-Present",
@@ -117,6 +117,7 @@ export const WORK_EXPERIENCES =
         // Research and Projects
         {
             id: 8,
+            image: "/assets/mit.png",
             company: "Jobbies Web Application",
             position: "Group Member",
             date: "November-December 2019",
@@ -137,6 +138,7 @@ export const WORK_EXPERIENCES =
         },
         {
             id: 9,
+            image: "/assets/kinect.jpeg",
             company: "Kinect Gestural Classification Project",
             position: "Project Creator",
             date: "March-May 2020",
@@ -189,6 +191,7 @@ export const WORK_EXPERIENCES =
         },
         {
             id: 12,
+            image: "/assets/painterly_square.png",
             company: "Painterly Photo Rendering Project",
             position: "Project Creator",
             date: "May 2019",
