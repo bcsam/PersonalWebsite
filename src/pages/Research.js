@@ -38,7 +38,7 @@ export default class Research extends Component {
           course.
         </p>
 
-        <h1>Sponsored Research</h1>
+        <h1 style={{paddingBottom: "2vw"}}>Sponsored Research</h1>
         { WORK_EXPERIENCES.filter((project) => project.workType == "research").map((project) => {
           return(
             <ResearchPageEntry
@@ -50,7 +50,7 @@ export default class Research extends Component {
           )
         })}
 
-        <h1>Projects</h1>
+        <h1 style={{paddingBottom: "2vw"}}>Projects</h1>
         { WORK_EXPERIENCES.filter((project) => project.workType == "project").map((project) => {
           return(
             <ResearchPageEntry
