@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import * as constants from "../Constants.js";
 
-import profileImage from "./assets/propic.jpg";
-
 export default class About extends Component {
   componentWillMount() {
     window.scrollTo(0, 0);
@@ -59,7 +57,7 @@ export default class About extends Component {
                 : { marginTop: "5vh" }
             }
           >
-            <img alt="Alt" src={profileImage} className="profileImage" />
+            <img alt="Alt" src={"/assets/propic.jpg"} className="profileImage" />
           </Col>
         </Row>
         <div className="divider"></div>

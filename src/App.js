@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Main from "./components/MainComponent";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
@@ -13,37 +14,43 @@ import * as routes from "./routes.js";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Router>
-          <NavigationBar />
-          <Switch>
-            <Route exact path={routes.HOME}>
-              <Home />
-            </Route>
+      <BrowserRouter>
+        <div>
+          <Main />
+        </div>
+      </BrowserRouter>
 
-            <Route path={routes.ABOUT}>
-              <About />
-            </Route>
+      // <React.Fragment>
+      //   <Router>
+      //     <NavigationBar />
+      //     <Switch>
+      //       <Route exact path={routes.HOME}>
+      //         <Home />
+      //       </Route>
 
-            <Route path={routes.WORK}>
-              <Work />
-            </Route>
+      //       <Route path={routes.ABOUT}>
+      //         <About />
+      //       </Route>
 
-            <Route path={routes.RESEARCH}>
-              <Research />
-            </Route>
+      //       <Route path={routes.WORK}>
+      //         <Work />
+      //       </Route>
 
-            <Route path={routes.CONTACT}>
-              <Contact />
-            </Route>
+      //       <Route path={routes.RESEARCH}>
+      //         <Research />
+      //       </Route>
 
-            <Route>
-              <NoMatch />
-            </Route>
-          </Switch>
-          <Footer />
-        </Router>
-      </React.Fragment>
+      //       <Route path={routes.CONTACT}>
+      //         <Contact />
+      //       </Route>
+
+      //       <Route>
+      //         <NoMatch />
+      //       </Route>
+      //     </Switch>
+      //     <Footer />
+      //   </Router>
+      // </React.Fragment>
     );
   }
 }
