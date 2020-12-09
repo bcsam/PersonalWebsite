@@ -39,32 +39,16 @@ export default class Research extends Component {
         </p>
 
         <h1>Sponsored Research</h1>
-        <ResearchPageEntry
-          image=""
-          project="Nota Bene Annotated Textbook SuperUROP"
-          date="September 2019-June 2020"
-          description={[
-            "Spearheaded full-stack development of an annotated textbook website using Vue.js, Node.js, and PostgreSQL",
-            "Tested usability and effectiveness of website through user testing at UC Davis",
-            "Presented results of research through a series of presentations and a thesis",
-          ]}
-        />
-        <ResearchPageEntry
-          project="MIT Quest for Intelligence UROP"
-          date="January-May 2019"
-          description={[
-            "Developed a GANpaint Scratch block extension to teach young students about generative adversarial networks",
-            "Improved the user experience and functionality of a variety of artificial intelligence Scratch block extensions",
-          ]}
-        />
-        <ResearchPageEntry
-          project="Man Vehicle Laboratory UROP"
-          date="February-June 2017"
-          description={[
-            "Modified a virtual simulator for a NASA-sponsored project to assess human subjects’ operation of the International Space Station’s telerobotic arm under varying levels of automation",
-            "Implemented the evaluation and data output of subjects’ situational awareness while using the simulator",
-          ]}
-        />
+        { WORK_EXPERIENCES.filter((project) => project.workType == "research").map((project) => {
+          return(
+            <ResearchPageEntry
+              image={project.image}
+              project={project.company}
+              date={project.date}
+              description={project.shortDescription}
+            />
+          )
+        })}
 
         <h1>Projects</h1>
         { WORK_EXPERIENCES.filter((project) => project.workType == "project").map((project) => {

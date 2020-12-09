@@ -159,11 +159,16 @@ export const WORK_EXPERIENCES =
         },
         {
           id: 10,
+          image: "/assets/mvl.jpg",
           company: "MIT Man Vehicle Laboratory",
           position: "Sponsored Researcher (UROP)",
           date: "February-June 2017",
           location: "Cambridge, Massachusetts",
           workType: "research",
+          shortDescription: [
+            "Modified a virtual simulator for a NASA-sponsored project to assess human subjects’ operation of the International Space Station’s telerobotic arm under varying levels of automation",
+            "Implemented the evaluation and data output of subjects’ situational awareness while using the simulator",
+          ],
           fullDescription:
             "My project focused on testing for the optimal level of automation for operators " +
             "of the International Space Station's telerobotic arm, the SSRMS, through virtual simulations. " +
@@ -174,11 +179,17 @@ export const WORK_EXPERIENCES =
         },
         {
             id: 11,
+            image: "/assets/haystack.png",
             company: "MIT Haystack Group",
             position: "Sponsored Researcher (SuperUROP)",
             date: "September 2019-May 2020",
             location: "Cambridge, Massachusetts",
             workType: "research",
+            shortDescription: [
+              "Spearheaded full-stack development of an annotated textbook website using Vue.js, Node.js, and PostgreSQL",
+              "Tested usability and effectiveness of website through user testing at UC Davis",
+              "Presented results of research through a series of presentations and a thesis",
+            ],
             fullDescription:
               "My project was predominately focused on full-stack development of an annotated textbook, " +
               "called Nota Bene. More specifically, this website allows an instructor to create academic " +
@@ -211,11 +222,16 @@ export const WORK_EXPERIENCES =
         },
         {
             id: 13,
+            image: "/assets/quest.png",
             company: "MIT Quest for Intelligence",
             position: "Sponsored Researcher (UROP)",
             date: "January-May 2019",
             location: "Cambridge, Massachusetts",
             workType: "research",
+            shortDescription: [
+              "Developed a GANpaint Scratch block extension to teach young students about generative adversarial networks",
+              "Improved the user experience and functionality of a variety of artificial intelligence Scratch block extensions",
+            ],
             fullDescription:
               "The problem that we addressed was making machine learning concepts more accessible to kids " +
               "in grades K-12. My main project was developing a GANpaint Scratch block extension to teach " +

@@ -52,6 +52,7 @@ export default class Home extends Component {
 
   render() {
     //assets
+    const bloombergLogo = "/assets/bloomberg.png";
     const bpLogo = "/assets/brainpower.png";
     const facebookLogo = "/assets/facebook.png";
     const haystackLogo = "/assets/haystack.png";
@@ -147,7 +148,7 @@ export default class Home extends Component {
           position={this.state.selectedExperience ? this.state.selectedExperience.position : null}
           date={this.state.selectedExperience ? this.state.selectedExperience.date : null}
           location={this.state.selectedExperience ? this.state.selectedExperience.location : null}
-          description={this.state.selectedExperience ? this.state.selectedExperience.fullDescription : null}
+          description={this.state.selectedExperience ? this.state.selectedExperience.escription : null}
         />
 
         <div
@@ -167,9 +168,9 @@ export default class Home extends Component {
                   className="workCard"
                   onClick={() => this.openWorkModal(this.workExperience.BLOOMBERG)}
                 >
-                  <Card.Img variant="top" src={yextLogo} />
+                  <Card.Img variant="top" src={bloombergLogo} />
                   <Card.Body>
-                    <Card.Title>Yext SWE</Card.Title>
+                    <Card.Title>Bloomberg SWE</Card.Title>
                   </Card.Body>
                 </Card>
 
