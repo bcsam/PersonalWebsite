@@ -2,11 +2,13 @@ export const WORK_EXPERIENCES =
     [
         {
             id: 0,
+            image: "",
             company: "Bloomberg L.P.",
             position: "Software Engineer",
             date: "January 2021-Present",
             location: "New York, New York",
-            description: "Coming Soon!"
+            fullDescription: "Coming Soon!",
+            workType: "job",
         },
         {
             id: 1,
@@ -14,7 +16,8 @@ export const WORK_EXPERIENCES =
             position: "Technical Product Management Intern",
             date: "January-February 2020",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "job",
+            fullDescription:
               //"Brain Power is a startup that develops games and AR experiences on Google Glass to help children on the autism spectrum with social-emotional skills.
               "The main project that I and another TPM intern addressed was the design and " +
               "creation of a mobile concept teaser to help advertise Brain Power's products. " +
@@ -28,7 +31,8 @@ export const WORK_EXPERIENCES =
             position: "Sofware Engineering Intern",
             date: "Summer 2018",
             location: "Menlo Park, California",
-            description:
+            workType: "job",
+            fullDescription:
               "The problem that I addressed in my project was creating a system to monitor the " +
               "occupancy of Oculus clean rooms since they can contain potentially harmful chemicals. " +
               "I did so by creating a 3-part application from scratch. The first part was a check " +
@@ -43,7 +47,8 @@ export const WORK_EXPERIENCES =
             position: "Sofware Engineering Intern",
             date: "Summer 2019",
             location: "New York, New York",
-            description:
+            workType: "job",
+            fullDescription:
               "My primary project was full-stack redevelopment of an internal website, called Pixelcloud, " +
               "which allows designers to create specifications for UI engineers. My project involved " +
               "several changes predominately focused on the navigation of the website, including adding " +
@@ -57,7 +62,8 @@ export const WORK_EXPERIENCES =
             position: "Android Development Intern",
             date: "Summer 2017",
             location: "Seattle, Washington",
-            description:
+            workType: "job",
+            fullDescription:
               "For this internship, I worked on a team of three to create an app which gives feedback about the " +
               "tone, style, and social tendencies of messages to help users on the autism spectrum with tone detection. " +
               "The app allows the user to send and receive messages from their phone number, color codes the messages " +
@@ -71,7 +77,8 @@ export const WORK_EXPERIENCES =
             position: "Sofware Engineering Intern",
             date: "May-June 2016",
             location: "Burlington, Massachusetts",
-            description:
+            workType: "job",
+            fullDescription:
               "This internship was part of an independent senior project for my high school. I began by studying a " +
               "variety of big data topics including RDF-based linked data, digital sentence structure, and data " +
               "integration. From there, I worked with the founder of OpenLink software to create and query profiles " +
@@ -84,7 +91,8 @@ export const WORK_EXPERIENCES =
             position: "Sofware Engineering Extern",
             date: "January-February 2018",
             location: "Provo, Utah",
-            description:
+            workType: "job",
+            fullDescription:
               "The problem that I addressed in my project was categorizing the data of Vivint home " +
               "security devices so that a user could ultimately select the categories of devices " +
               "from which they would like to receive notifications. To do so, I created a program " +
@@ -97,7 +105,8 @@ export const WORK_EXPERIENCES =
             position: "Sofware Engineering Intern",
             date: "Summer 2020",
             location: "New York, New York",
-            description:
+            workType: "job",
+            fullDescription:
               "At Yext I worked on a number of Jira stories varying in topic. Nevertheless, my main project " +
               "was that I spearheaded a development epic to migrate my team's JavaScript builds from plovr " +
               "to closure rules, completing two-thirds of the epic single-handedly. This epic reduced the " +
@@ -112,7 +121,12 @@ export const WORK_EXPERIENCES =
             position: "Group Member",
             date: "November-December 2019",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "project",
+            shortDescription: [
+              "Created a web application that critiques a dancer's performance of pre-recorded dance choreography through use of Kinect skeleton tracking",
+              "Presented iterative models of prototype to peers and faculty throughout development",
+            ],
+            fullDescription:
               "This project was a part of my advanced undergraduate study (AUS) in web development. The problem that " +
               "we addressed was that during a job recruiting season clients have a difficult time keeping track of " +
               "all of their job applications, application statuses, and recruiting emails and often rely on spreadsheets. " +
@@ -127,7 +141,12 @@ export const WORK_EXPERIENCES =
             position: "Project Creator",
             date: "March-May 2020",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "project",
+            shortDescription: [
+              "Created an award-winning web application on a team of 4 which organizes a user's job applications including their position, company, status, and time between updates",
+              "Incorporated gmail api to filter a user's emails and allow them to attach recruiting emails to their job application objects",
+            ],
+            fullDescription:
               "This project was a part of my advanced undergraduate study (AUS) in multi-modal user " +
               "interfaces. The problem that I was addressing is that when dance choreographers teach, it is often " +
               "difficult for them to give their dancers individual feedback. I created a web application which allows " +
@@ -142,7 +161,8 @@ export const WORK_EXPERIENCES =
           position: "Sponsored Researcher (UROP)",
           date: "February-June 2017",
           location: "Cambridge, Massachusetts",
-          description:
+          workType: "research",
+          fullDescription:
             "My project focused on testing for the optimal level of automation for operators " +
             "of the International Space Station's telerobotic arm, the SSRMS, through virtual simulations. " +
             "More specifically, we had human tests subjects perform tasks in the simulation under three different " +
@@ -156,7 +176,8 @@ export const WORK_EXPERIENCES =
             position: "Sponsored Researcher (SuperUROP)",
             date: "September 2019-May 2020",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "research",
+            fullDescription:
               "My project was predominately focused on full-stack development of an annotated textbook, " +
               "called Nota Bene. More specifically, this website allows an instructor to create academic " +
               "sections of students and upload pdf assignments. The students can subsequently leave comments " +
@@ -172,7 +193,11 @@ export const WORK_EXPERIENCES =
             position: "Project Creator",
             date: "May 2019",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "project",
+            shortDescription: [
+              "Transformed digital photo renderings to resemble photo-realistic paintings with visible brush strokes",
+            ],
+            fullDescription:
               //Painterly Rendering for Video and Interaction by Aaron Hertzmann
               "This project was a part of my advanced undergraduate study (AUS) in digital and " +
               "computational photography. For my project, I transformed digital photo renderings to appear as " +
@@ -187,7 +212,8 @@ export const WORK_EXPERIENCES =
             position: "Sponsored Researcher (UROP)",
             date: "January-May 2019",
             location: "Cambridge, Massachusetts",
-            description:
+            workType: "research",
+            fullDescription:
               "The problem that we addressed was making machine learning concepts more accessible to kids " +
               "in grades K-12. My main project was developing a GANpaint Scratch block extension to teach " +
               "the students about generative adversarial networks (GANs). GANpaint is an MIT developed application " +

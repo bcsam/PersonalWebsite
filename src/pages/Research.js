@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ResearchPageEntry from "../components/ResearchPageEntry.js";
 import { Container } from "react-bootstrap";
+import { WORK_EXPERIENCES } from "../shared/workExperience";
 
 export default class Research extends Component {
   componentWillMount() {
@@ -39,8 +40,9 @@ export default class Research extends Component {
 
         <h1>Sponsored Research</h1>
         <ResearchPageEntry
+          image=""
           project="Nota Bene Annotated Textbook SuperUROP"
-          date="August 2019-June 2020"
+          date="September 2019-June 2020"
           description={[
             "Spearheaded full-stack development of an annotated textbook website using Vue.js, Node.js, and PostgreSQL",
             "Tested usability and effectiveness of website through user testing at UC Davis",
@@ -65,29 +67,15 @@ export default class Research extends Component {
         />
 
         <h1>Projects</h1>
-        <ResearchPageEntry
-          project="Kinect Gestural Classification"
-          date="March-May 2020"
-          description={[
-            "Created a web application that critiques a dancer's performance of pre-recorded dance choreography through use of Kinect skeleton tracking",
-            "Presented iterative models of prototype to peers and faculty throughout development",
-          ]}
-        />
-        <ResearchPageEntry
-          project="Jobbies Web Application"
-          date="November-December 2020"
-          description={[
-            "Created an award-winning web application on a team of 4 which organizes a user's job applications including their position, company, status, and time between updates",
-            "Incorporated gmail api to filter a user's emails and allow them to attach recruiting emails to their job application objects",
-          ]}
-        />
-        <ResearchPageEntry
-          project="Painterly Photo Rendering Project"
-          date="May 2019"
-          description={[
-            "Transformed digital photo renderings to resemble photo-realistic paintings with visible brush strokes",
-          ]}
-        />
+        { WORK_EXPERIENCES.filter((project) => project.workType == "project").map((project) => {
+          return(
+            <ResearchPageEntry
+              project={project.company}
+              date={project.date}
+              description={project.shortDescription}
+            />
+          )
+        })}
       </Container>
     );
   }

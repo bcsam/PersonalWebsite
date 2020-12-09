@@ -3,7 +3,7 @@ import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import { Container, Card, Button, CardDeck, Col, Row } from "react-bootstrap";
 import "./Home.css";
-import { WORK_EXPERIENCES } from "./shared/workExperience.js";
+import { WORK_EXPERIENCES } from "../shared/workExperience";
 import WorkModal from "../components/WorkModal";
 import * as constants from "../Constants.js";
 import * as routes from "../routes.js";
@@ -147,7 +147,7 @@ export default class Home extends Component {
           position={this.state.selectedExperience ? this.state.selectedExperience.position : null}
           date={this.state.selectedExperience ? this.state.selectedExperience.date : null}
           location={this.state.selectedExperience ? this.state.selectedExperience.location : null}
-          description={this.state.selectedExperience ? this.state.selectedExperience.description : null}
+          description={this.state.selectedExperience ? this.state.selectedExperience.fullDescription : null}
         />
 
         <div
