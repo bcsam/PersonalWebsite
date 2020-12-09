@@ -8,20 +8,7 @@ import WorkModal from "../components/WorkModal";
 import * as constants from "../Constants.js";
 import * as routes from "../routes.js";
 
-//assets
-import bpLogo from "./assets/brainpower.png";
-import facebookLogo from "./assets/facebook.png";
-import haystackLogo from "./assets/haystack.png";
-import homeBanner from "./assets/homePage.jpg";
-import kinectImage from "./assets/kinect.jpeg";
-import mitLogo from "./assets/mit.png";
-import mvlLogo from "./assets/mvl.jpg";
-import openLinkLogo from "./assets/openlink.jpg";
-import painterlyImage from "./assets/painterly_square.png";
-import profileImage from "./assets/propic.jpg";
-import questLogo from "./assets/quest.png";
-import vivintLogo from "./assets/vivint.jpg";
-import yextLogo from "./assets/yext.png";
+
 
 export default class Home extends Component {
   constructor(props) {
@@ -64,6 +51,22 @@ export default class Home extends Component {
   }
 
   render() {
+    //assets
+    const bpLogo = "/assets/brainpower.png";
+    const facebookLogo = "/assets/facebook.png";
+    const haystackLogo = "/assets/haystack.png";
+    const homeBanner = "/assets/homePage.jpg";
+    const kinectImage = "/assets/kinect.jpeg";
+    const mitLogo = "/assets/mit.png";
+    const mvlLogo = "/assets/mvl.jpg";
+    const openLinkLogo = "/assets/openlink.jpg";
+    const painterlyImage = "/assets/painterly_square.png";
+    const profileImage = "/assets/propic.jpg";
+    const questLogo = "/assets/quest.png";
+    const vivintLogo = "/assets/vivint.jpg";
+    const yextLogo = "/assets/yext.png";
+
+
     if (this.state.redirectTo.length > 0) {
       return <Redirect push to={this.state.redirectTo} />;
     }
