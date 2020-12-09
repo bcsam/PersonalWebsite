@@ -23,7 +23,7 @@ export default class Work extends Component {
           as the Independent Activities Period (IAP).
         </p>
 
-        <h1>Industry Experience</h1>
+        <h1 style={{paddingBottom: "2vw"}}>Industry Experience</h1>
         {WORK_EXPERIENCES.filter((work) => work.workType == "job").map((work) => {
           return(
             <WorkPageEntry 

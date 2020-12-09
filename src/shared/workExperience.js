@@ -12,6 +12,25 @@ export const WORK_EXPERIENCES =
             fullDescription: "Coming Soon!"
         },
         {
+          id: 7,
+          image: "/assets/yext.png",
+          company: "Yext",
+          position: "Sofware Engineering Intern",
+          date: "Summer 2020",
+          location: "New York, New York",
+          workType: "job",
+          shortDescription:[
+            "Reduced JS artifacts by 91% from migrating builds to rules_closure and presented results to group management",
+            "Enforced HIPAA compliance through several Jira stories involving export logging and both tagging and encryption of identifying healthcare information",
+          ],
+          fullDescription:
+            "At Yext I worked on a number of Jira stories varying in topic. Nevertheless, my main project " +
+            "was that I spearheaded a development epic to migrate my team's JavaScript builds from plovr " +
+            "to closure rules, completing two-thirds of the epic single-handedly. This epic reduced the " +
+            "JavaScript artifacts of our builds by up to 91%, and I presented these results to a collection " +
+            "of three teams.",
+        },
+        {
             id: 1,
             image: "/assets/brainpower.png",
             company: "Brain Power",
@@ -30,6 +49,26 @@ export const WORK_EXPERIENCES =
               "We addressed the problem through client research, iterative development of UI " +
               "mockups on Figma with consultation with the company CEO, and creation of " +
               "development stories on Jira.",
+        },
+        {
+          id: 3,
+          image: "/assets/facebook.png",
+          company: "Facebook",
+          position: "Sofware Engineering Intern",
+          date: "Summer 2019",
+          location: "New York, New York",
+          workType: "job",
+          shortDescription:[
+            "Redesigned the navigation of the internal website that allows designers to create specifications for UI engineers",
+            "Coordinated a team of 3 and presented weekly to higher management on the progress of the project",
+          ],
+          fullDescription:
+            "My primary project was full-stack redevelopment of an internal website, called Pixelcloud, " +
+            "which allows designers to create specifications for UI engineers. My project involved " +
+            "several changes predominately focused on the navigation of the website, including adding " +
+            "and standardizing search bars and collapsible sidebars in all views. Additionally, I coordinated " +
+            "a team of 3 and presented weekly to higher management on the progress of the project. For this " +
+            "project I coded predominately in React.js and Hack.",
         },
         {
             id: 2,
@@ -53,24 +92,23 @@ export const WORK_EXPERIENCES =
               "and Hack.",
         },
         {
-            id: 3,
-            image: "/assets/facebook.png",
-            company: "Facebook",
-            position: "Sofware Engineering Intern",
-            date: "Summer 2019",
-            location: "New York, New York",
-            workType: "job",
-            shortDescription:[
-              "Redesigned the navigation of the internal website that allows designers to create specifications for UI engineers",
-              "Coordinated a team of 3 and presented weekly to higher management on the progress of the project",
-            ],
-            fullDescription:
-              "My primary project was full-stack redevelopment of an internal website, called Pixelcloud, " +
-              "which allows designers to create specifications for UI engineers. My project involved " +
-              "several changes predominately focused on the navigation of the website, including adding " +
-              "and standardizing search bars and collapsible sidebars in all views. Additionally, I coordinated " +
-              "a team of 3 and presented weekly to higher management on the progress of the project. For this " +
-              "project I coded predominately in React.js and Hack.",
+          id: 6,
+          image: "/assets/vivint.jpg",
+          company: "Vivint Smart Home",
+          position: "Sofware Engineering Extern",
+          date: "January-February 2018",
+          location: "Provo, Utah",
+          workType: "job",
+          shortDescription: [
+            "Created a program to categorize the Elasticsearch data of triggered security devices in order to allow users to filter alarm notifications by device type",
+            "Improved the internal web app permission and group requirements to regulate employees’ site access",
+          ],
+          fullDescription:
+            "The problem that I addressed in my project was categorizing the data of Vivint home " +
+            "security devices so that a user could ultimately select the categories of devices " +
+            "from which they would like to receive notifications. To do so, I created a program " +
+            "which categorizes Elasticsearch data of triggered security devices based on the " +
+            "incoming fields. For this project, I worked predominately in Python and partially in Go.",
         },
         {
             id: 4,
@@ -112,44 +150,6 @@ export const WORK_EXPERIENCES =
               "integration. From there, I worked with the founder of OpenLink software to create and query profiles " +
               "through use of RDF in Turtle notation and SPARQL. At the end of my internship, I gave a presentation " +
               "of my experience to students and faculty at my school.",
-        },
-        {
-            id: 6,
-            images: "/assets/vivint.jpg",
-            company: "Vivint Smart Home",
-            position: "Sofware Engineering Extern",
-            date: "January-February 2018",
-            location: "Provo, Utah",
-            workType: "job",
-            shortDescription: [
-              "Created a program to categorize the Elasticsearch data of triggered security devices in order to allow users to filter alarm notifications by device type",
-              "Improved the internal web app permission and group requirements to regulate employees’ site access",
-            ],
-            fullDescription:
-              "The problem that I addressed in my project was categorizing the data of Vivint home " +
-              "security devices so that a user could ultimately select the categories of devices " +
-              "from which they would like to receive notifications. To do so, I created a program " +
-              "which categorizes Elasticsearch data of triggered security devices based on the " +
-              "incoming fields. For this project, I worked predominately in Python and partially in Go.",
-        },
-        {
-            id: 7,
-            image: "/assets/yext.png",
-            company: "Yext",
-            position: "Sofware Engineering Intern",
-            date: "Summer 2020",
-            location: "New York, New York",
-            workType: "job",
-            shortDescription:[
-              "Reduced JS artifacts by 91% from migrating builds to rules_closure and presented results to group management",
-              "Enforced HIPAA compliance through several Jira stories involving export logging and both tagging and encryption of identifying healthcare information",
-            ],
-            fullDescription:
-              "At Yext I worked on a number of Jira stories varying in topic. Nevertheless, my main project " +
-              "was that I spearheaded a development epic to migrate my team's JavaScript builds from plovr " +
-              "to closure rules, completing two-thirds of the epic single-handedly. This epic reduced the " +
-              "JavaScript artifacts of our builds by up to 91%, and I presented these results to a collection " +
-              "of three teams.",
         },
 
         // Research and Projects

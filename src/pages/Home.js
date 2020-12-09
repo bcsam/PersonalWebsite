@@ -148,7 +148,7 @@ export default class Home extends Component {
           position={this.state.selectedExperience ? this.state.selectedExperience.position : null}
           date={this.state.selectedExperience ? this.state.selectedExperience.date : null}
           location={this.state.selectedExperience ? this.state.selectedExperience.location : null}
-          description={this.state.selectedExperience ? this.state.selectedExperience.escription : null}
+          description={this.state.selectedExperience ? this.state.selectedExperience.fullDescription : null}
         />
 
         <div

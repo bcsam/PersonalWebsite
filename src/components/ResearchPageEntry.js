@@ -3,7 +3,7 @@ import { Media } from 'reactstrap';
 
 function ResearchPageEntry(props) {
   return(
-    <Media>
+    <Media style={{marginBottom: "1vw"}}>
       <Media tag="li">
         <Media left middle>
           <Media object src={props.image} alt={props.project} style={{height: "10vh", width: "10vh", boxShadow: "1px 1px 4px gray", borderRadius: "10%"}} />
