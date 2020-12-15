@@ -1,29 +1,25 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
 import styled from "styled-components";
-import * as routes from "../routes.js";
 
 const Styles = styled.div`
-  .navbar {
-    background-color: #000000;
+  .footer {
+    background-color: #1f1f1f;
     box-shadow: 0 1px whitesmoke;
-  }
-
-  a,
-  .navbar-brand,
-  .navbar-nav .nav-link {
     color: #ffffff;
-
-    &:hover {
-      color: white;
-    }
+    height: 150px;
   }
 `;
 
 export const Footer = () => (
   <Styles>
-    <Navbar sticky="bottom" expand="lg">
-      <Navbar.Brand href={routes.HOME}>Created by Brent Samuels</Navbar.Brand>
-    </Navbar>
+    <div className="footer">
+      <div className="container" style={{top: "40%", position: "relative"}}>
+        <div className="row justify-content-center" >             
+            <div className="col-auto">
+            <h5 style={{fontWeight: "0"}}>&#169; Brent Samuels 2021</h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </Styles>
 );
