@@ -24,7 +24,7 @@ export default class Work extends Component {
         </p>
 
         <h1 style={{paddingBottom: "2vw"}}>Industry Experience</h1>
-        {WORK_EXPERIENCES.filter((work) => work.workType == "job").map((work) => {
+        {WORK_EXPERIENCES.filter((work) => work.workType === "job").map((work) => {
           return(
             <WorkPageEntry 
               image={work.image}

@@ -45,6 +45,7 @@ export const Contact = () => (
               className="link"
               href="https://www.linkedin.com/in/brent-samuels-mit20/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
@@ -54,6 +55,7 @@ export const Contact = () => (
               className="link"
               href="https://www.facebook.com/brent.samuels.7/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Facebook
             </a>

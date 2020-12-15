@@ -39,7 +39,7 @@ export default class Research extends Component {
         </p>
 
         <h1 style={{paddingBottom: "2vw"}}>Sponsored Research</h1>
-        { WORK_EXPERIENCES.filter((project) => project.workType == "research").map((project) => {
+        { WORK_EXPERIENCES.filter((project) => project.workType === "research").map((project) => {
           return(
             <ResearchPageEntry
               image={project.image}
@@ -51,7 +51,7 @@ export default class Research extends Component {
         })}
 
         <h1 style={{paddingBottom: "2vw"}}>Projects</h1>
-        { WORK_EXPERIENCES.filter((project) => project.workType == "project").map((project) => {
+        { WORK_EXPERIENCES.filter((project) => project.workType === "project").map((project) => {
           return(
             <ResearchPageEntry
               image={project.image}

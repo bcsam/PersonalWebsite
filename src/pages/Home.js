@@ -42,7 +42,7 @@ export default class Home extends Component {
   openWorkModal(workID) {
     // this.setWorkInfo(workExperience);
     this.setState({
-      selectedExperience: WORK_EXPERIENCES.filter((experience) => workID == experience.id)[0] 
+      selectedExperience: WORK_EXPERIENCES.filter((experience) => workID === experience.id)[0] 
     });
   }
 
