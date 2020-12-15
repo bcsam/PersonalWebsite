@@ -26,14 +26,16 @@ export default class Work extends Component {
         <h1 style={{paddingBottom: "2vw"}}>Industry Experience</h1>
         {WORK_EXPERIENCES.filter((work) => work.workType === "job").map((work) => {
           return(
-            <WorkPageEntry 
-              image={work.image}
-              company={work.company}
-              position={work.position}
-              date={work.date}
-              location={work.location}
-              description={work.shortDescription}
-            />
+            <div style={{marginBottom: "25px"}}>
+              <WorkPageEntry 
+                image={work.image}
+                company={work.company}
+                position={work.position}
+                date={work.date}
+                location={work.location}
+                description={work.shortDescription}
+              />
+            </div>
           );
         })}
       </Container>
