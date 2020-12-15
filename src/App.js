@@ -19,38 +19,6 @@ class App extends Component {
           <Main />
         </div>
       </BrowserRouter>
-
-      // <React.Fragment>
-      //   <Router>
-      //     <NavigationBar />
-      //     <Switch>
-      //       <Route exact path={routes.HOME}>
-      //         <Home />
-      //       </Route>
-
-      //       <Route path={routes.ABOUT}>
-      //         <About />
-      //       </Route>
-
-      //       <Route path={routes.WORK}>
-      //         <Work />
-      //       </Route>
-
-      //       <Route path={routes.RESEARCH}>
-      //         <Research />
-      //       </Route>
-
-      //       <Route path={routes.CONTACT}>
-      //         <Contact />
-      //       </Route>
-
-      //       <Route>
-      //         <NoMatch />
-      //       </Route>
-      //     </Switch>
-      //     <Footer />
-      //   </Router>
-      // </React.Fragment>
     );
   }
 }
