@@ -163,7 +163,7 @@ export default class Home extends Component {
             }}
           >
             <h1 className="flexbox">Work Experience</h1>
-            <CardDeck>
+            <CardDeck style={{width: "80vw", margin: "auto"}}>
               <Card
                   className="workCard"
                   onClick={() => this.openWorkModal(this.workExperience.BLOOMBERG)}
@@ -236,11 +236,11 @@ export default class Home extends Component {
             </div>
 
             {/* Expand Deck */}
-            <CardDeck
+            <CardDeck 
               style={
                 this.state.isWorkExpanded
-                  ? { marginTop: "5vh" }
-                  : { display: "none" }
+                  ? { marginTop: "5vh", width: "80vw", margin: "auto"}
+                  : { display: "none", width: "80vw", margin: "auto"}
               }
             >
               <Card
@@ -301,7 +301,7 @@ export default class Home extends Component {
         {/* Research Experience */}
         <Container style={{ minHeight: "95vh", padding: "10vh 0" }}>
           <h1 className="flexbox">Research and Projects</h1>
-          <CardDeck>
+          <CardDeck style={{ width: "80vw", margin: "auto" }}>
             <Card
               className="researchCard"
               onClick={() => this.openWorkModal(this.workExperience.NB)}
@@ -368,8 +368,8 @@ export default class Home extends Component {
           <CardDeck
             style={
               this.state.isResearchExpanded
-                ? { marginTop: "5vh" }
-                : { display: "none" }
+                ? { marginTop: "5vh", width: "80vw", margin: "auto" }
+                : { display: "none", width: "80vw", margin: "auto" }
             }
           >
             <Card
