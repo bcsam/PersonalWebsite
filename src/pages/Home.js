@@ -87,7 +87,16 @@ export default class Home extends Component {
         </div>
 
         {/* About Me */}
-        <Container style={{ paddingTop: "10vh", minHeight: "95vh" }}>
+        <Container style={{ paddingTop: "10vh", paddingBottom: "10vh", minHeight: "95vh" }}>
+          <Row
+            style={
+              document.documentElement.clientWidth >= constants.DESKTOP_VIEWPORT
+                ? { display: "none" }
+                : { margin: "auto", marginBottom: "5vh" }
+            }
+          >
+            <img alt="Alt" src={"/assets/propic.jpg"} style={{width: "70vw", height: "70vw", margin: "auto"}} className="profileImage"/>
+          </Row>
           <Row>
             <Col style={{ marginTop: "2vw" }}>
               <h1>About Me</h1>

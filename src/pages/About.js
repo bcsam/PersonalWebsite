@@ -16,8 +16,17 @@ export default class About extends Component {
           height: `100%`,
         }}
       >
+        <Row
+          style={
+            document.documentElement.clientWidth >= constants.DESKTOP_VIEWPORT
+              ? { display: "none" }
+              : { margin: "auto" }
+          }
+        >
+          <img alt="Alt" src={"/assets/propic.jpg"} style={{width: "70vw", height: "70vw", margin: "auto"}} className="profileImage"/>
+        </Row>
         <Row>
-          <Col style={{ marginTop: "5vh" }}>
+          <Col style={{ marginTop: "5vh", marginBottom: "5vh"}}>
             <h1>About Me</h1>
             <p>
               Hi, my name is <b>Brent Samuels</b>. I graduated from The
