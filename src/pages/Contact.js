@@ -19,8 +19,19 @@ export const Contact = () => (
         height: `100%`,
       }}
     >
+      <Row
+          style={
+            document.documentElement.clientWidth >= constants.DESKTOP_VIEWPORT
+              ? { display: "none" }
+              : { margin: "auto" }
+          }
+        >
+            <img alt="Alt" src={"/assets/puntaCana.jpg"} style={{width: "90vw", height: "90vw", margin: "auto"}} className="profileImage"/>
+      </Row>
       <Row>
-        <Col style={{ marginTop: "10vh" }}>
+        <Col style={ document.documentElement.clientWidth >= constants.DESKTOP_VIEWPORT
+              ? { marginTop: "10vh" }
+              : { margin: "7vh 0" }}>
           <h1>
             <b>Contact Me</b>
           </h1>
