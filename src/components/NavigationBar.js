@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import * as routes from "../routes.js";
 
@@ -31,19 +32,29 @@ export const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Item>
-              <Nav.Link href={routes.HOME}>Home</Nav.Link>
+              <Nav.Link>
+                <Link to={routes.HOME}>Home</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href={routes.ABOUT}>About</Nav.Link>
+              <Nav.Link to={routes.ABOUT}>
+                <Link to={routes.ABOUT}>About</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href={routes.WORK}>Work</Nav.Link>
+              <Nav.Link>
+                <Link to={routes.WORK}>Work</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href={routes.RESEARCH}>Research</Nav.Link>
+              <Nav.Link>
+                <Link to={routes.RESEARCH}>Research</Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href={routes.CONTACT}>Contact</Nav.Link>
+              <Nav.Link>
+                <Link to={routes.CONTACT}>Contact</Link>
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
